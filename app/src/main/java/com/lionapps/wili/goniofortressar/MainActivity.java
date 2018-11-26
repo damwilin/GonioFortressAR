@@ -3,6 +3,8 @@ package com.lionapps.wili.goniofortressar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.google.ar.core.ArCoreApk;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

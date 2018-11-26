@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
 
 android {
     compileSdkVersion 28
@@ -31,3 +32,9 @@ dependencies {
     //sceneform
     implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.5.1'
 }
+
+
+sceneform.asset('sampledata/simple_building.obj',
+        'default',
+        'sampledata/simple_building.sfa',
+        'src/main/assets/simple_building')
