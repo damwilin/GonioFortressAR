@@ -16,10 +16,15 @@ public class CustomArFragment extends ArFragment {
         config.setUpdateMode(Config.UpdateMode.LATEST_CAMERA_IMAGE);
         session.configure(config);
         getArSceneView().setupSession(session);
+        disablePlaneRender();
         if (((MainActivity) getActivity()).setupAugmentedImagesDb(config, session)){
             Log.d("SetupAugImgDb", "Success");
         } else
             Log.e("SetupAugImgDb", "Fail");
         return config;
+    }
+
+    private void disablePlaneRender(){
+        getArSceneView().getPlaneRenderer().setEnabled(false);
     }
 }

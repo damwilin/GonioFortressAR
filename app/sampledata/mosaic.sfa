@@ -115,7 +115,7 @@
     file: 'sampledata/mosaic.obj',
     name: 'mosaic',
     recenter: 'root',
-    scale: 0.005,
+    scale: 0.0055,
   },
   version: '0.52:1',
 }
